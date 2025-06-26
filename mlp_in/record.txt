@@ -1,0 +1,36 @@
+Fri Jun 20 09:29:12 EDT 2025
+[bqc5559@p-sc-2377 add_interstitialN]$ cat ../defect/in/xy_direction/train.cfg >> train.cfg (16 cfgs)
+[bqc5559@p-sc-2377 add_interstitialN]$ cat ../defect/in/xyz_direction/train.cfg >> train.cfg (31 cfgs)
+[bqc5559@p-sc-2377 add_interstitialN]$ cat ../defect/iu/xyz_direction/train.cfg >> train.cfg (16 cfgs)
+[bqc5559@p-sc-2377 add_interstitialN]$ grep "BEGIN" train.cfg | wc -l
+3299
+[bqc5559@p-sc-2377 add_interstitialN]$ grep "BEGIN" ../train.cfg | wc -l
+3236
+3299-3236 = 63 = 16+31+16
+
+Fri Jun 20 15:36:15 EDT 2025
+(phonopy) [bqc5559@p-sc-2377 add_interstitialN]$ grep "BEGIN" train.cfg  | wc -l
+3299
+(phonopy) [bqc5559@p-sc-2377 add_interstitialN]$ cat ../defect/in/z_direction/train.cfg >> train.cfg
+(phonopy) [bqc5559@p-sc-2377 add_interstitialN]$ grep "BEGIN" train.cfg  | wc -l
+3324
+
+Sat Jun 21 10:47:05 EDT 2025
+(phonopy) [bqc5559@p-bc-5003 add_interstitialN]$ grep "BEGIN" train.cfg | wc -l
+3324
+(phonopy) [bqc5559@p-bc-5003 add_interstitialN]$ cat converted.cfg >> train.cfg
+(phonopy) [bqc5559@p-bc-5003 add_interstitialN]$ grep "BEGIN" train.cfg | wc -l
+3330
+cat ../defect/iu/xy_direction/train.cfg >> train.cfg
+(phonopy) [bqc5559@p-bc-5003 add_interstitialN]$ grep "BEGIN" train.cfg | wc -l
+3346
+
+
+Sat 21 Jun 2025 07:06:07 PM PDT
+(nersc-python) bqc5559@login30:/global/cfs/cdirs/m4796/bchen/mlp_in> grep BEGIN train.cfg | wc -l
+3346
+
+Tue 24 Jun 2025 02:56:24 PM PDT
+bqc5559@login36:/global/cfs/cdirs/m4796/bchen/mlp_in> grep BEGIN train.cfg | wc -l
+3467
+

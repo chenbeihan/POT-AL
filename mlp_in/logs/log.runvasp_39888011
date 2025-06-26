@@ -1,0 +1,126 @@
+MTP loaded from pot.almtp
+	batch_size = 9999
+	swap_limit = 0
+	weight_scaling = 2
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	init_value = 0.000001
+	site_en_weight = 0.000000
+	stress_weight = 0.000000
+	threshold = 1.001000
+Selection: loading state from "pot.almtp"
+Selection: loaded the following weights:
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	stress_weight = 0.000000
+	site_en_weight = 0.000000
+
+Selection: loading state complete.
+Training set loaded from train.cfg
+429 configurations selected from training set
+Loading and selection of candidates completed
+Training set was increased by 50 configurations
+relative numeration of species detected
+Processed 50 configurations
+Submitted batch job 39888870
+0
+Submitted batch job 39888871
+1
+Submitted batch job 39888873
+2
+Submitted batch job 39888874
+3
+Submitted batch job 39888877
+4
+Submitted batch job 39888878
+5
+Submitted batch job 39888879
+6
+Submitted batch job 39888881
+7
+Submitted batch job 39888882
+8
+Submitted batch job 39888883
+9
+Submitted batch job 39888884
+10
+Submitted batch job 39888885
+11
+Submitted batch job 39888886
+12
+Submitted batch job 39888888
+13
+Submitted batch job 39888889
+14
+Submitted batch job 39888890
+15
+Submitted batch job 39888891
+16
+Submitted batch job 39888892
+17
+Submitted batch job 39888893
+18
+Submitted batch job 39888896
+19
+Submitted batch job 39888897
+20
+Submitted batch job 39888899
+21
+Submitted batch job 39888900
+22
+Submitted batch job 39888901
+23
+Submitted batch job 39888902
+24
+Submitted batch job 39888903
+25
+Submitted batch job 39888905
+26
+Submitted batch job 39888906
+27
+Submitted batch job 39888908
+28
+Submitted batch job 39888909
+29
+Submitted batch job 39888910
+30
+Submitted batch job 39888911
+31
+Submitted batch job 39888912
+32
+Submitted batch job 39888913
+33
+Submitted batch job 39888915
+34
+Submitted batch job 39888917
+35
+Submitted batch job 39888918
+36
+Submitted batch job 39888919
+37
+Submitted batch job 39888920
+38
+Submitted batch job 39888922
+39
+Submitted batch job 39888923
+40
+Submitted batch job 39888924
+41
+Submitted batch job 39888925
+42
+Submitted batch job 39888926
+43
+Submitted batch job 39888928
+44
+Submitted batch job 39888929
+45
+Submitted batch job 39888930
+46
+Submitted batch job 39888931
+47
+Submitted batch job 39888932
+48
+Submitted batch job 39888934
+49
+submit check_svasp.sm
+Submitted batch job 39888973

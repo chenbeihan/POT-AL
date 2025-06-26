@@ -1,0 +1,32 @@
+WARNING: no confgiurations will be saved
+Processed 0 configurations
+0
+Processed 1 configurations
+1
+Processed 1 configurations
+2
+WARNING: no confgiurations will be saved
+Processed 0 configurations
+3
+WARNING: no confgiurations will be saved
+Processed 0 configurations
+4
+Processed 1 configurations
+5
+Processed 1 configurations
+6
+Processed 1 configurations
+7
+Processed 1 configurations
+8
+Processed 1 configurations
+9
+Processed 1 configurations
+10
+Processed 1 configurations
+11
+len(configs_list): 9
+Configurations saved to validate.cfg
+Configurations appended to train.cfg
+submit run_mlp.sm
+Submitted batch job 39836867

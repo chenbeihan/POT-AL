@@ -1,0 +1,64 @@
+ISTART = 0
+ICHARG = 2
+ENCUT = 520
+ISMEAR = 0
+SIGMA = 0.05
+EDIFF = 1E-4
+#EDIFFG = -1E-3
+NELM = 200
+PREC = Accurate
+ALGO = Normal
+IBRION = -1
+ISIF = 2
+ISYM = -1
+
+#The Output File
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+LREAL = Auto
+ADDGRID = .TRUE.
+LASPH  = .TRUE.
+
+#KSPACING = 0.2 
+#KPAR=2
+NCORE=8
+
+ISPIN=2
+ICHARG = 1
+LNONCOLLINEAR = T
+MAGMOM=0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+       0 0 2 \
+	   0 0 2 \
+       99*0.0
+# Spin-orbit coupling
+LSORBIT = .TRUE.
+SAXIS = 0 0 1  # This means the spin quantization axis is along the z-direction

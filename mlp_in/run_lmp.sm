@@ -1,0 +1,41 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+#SBATCH --cpus-per-task=2
+#SBATCH -t 4:00:00
+#SBATCH --constraint=cpu
+#SBATCH --qos=shared
+#SBATCH -A m4796
+#SBATCH -o log.lmp_%j
+
+# Set OpenMP environment variables
+export OMP_NUM_THREADS=2
+
+# Get started
+start_time=$(date +%s)
+echo "Job started on $(hostname) at $(date)"
+echo "Running with $SLURM_NTASKS MPI tasks and $OMP_NUM_THREADS OpenMP threads per task."
+
+# Run the LAMMPS job
+sed "s/4928463/$(shuf -i 10000000-99999999 -n 1)/" in0.npt > in.npt
+srun -n 16 -c 2 --cpu-bind=cores /global/homes/b/bqc5559/programs/mlip3/mylammps/src/lmp_mpi -in in.npt
+
+# Check if preselected.cfg exists
+if [ -f "preselected.cfg" ]; then
+    export SHLVL=1
+    sbatch run_vasp.sm
+    exit 1
+else
+    echo "preselected.cfg not found. Stopping the script."
+    export SHLVL=1
+    cp final_configuration.dat initial.lmp
+    sbatch run_lmp.sm
+    exit 1
+fi
+
+
+#  Record the end time
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+# Print the total runtime
+echo "Total Runtime: $runtime seconds"

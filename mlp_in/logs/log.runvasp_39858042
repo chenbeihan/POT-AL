@@ -1,0 +1,208 @@
+MTP loaded from pot.almtp
+	batch_size = 9999
+	swap_limit = 0
+	weight_scaling = 2
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	init_value = 0.000001
+	site_en_weight = 0.000000
+	stress_weight = 0.000000
+	threshold = 1.001000
+Selection: loading state from "pot.almtp"
+Selection: loaded the following weights:
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	stress_weight = 0.000000
+	site_en_weight = 0.000000
+
+Selection: loading state complete.
+Training set loaded from train.cfg
+429 configurations selected from training set
+Loading and selection of candidates completed
+Training set was increased by 91 configurations
+relative numeration of species detected
+Processed 91 configurations
+Submitted batch job 39858182
+0
+Submitted batch job 39858183
+1
+Submitted batch job 39858184
+2
+Submitted batch job 39858185
+3
+Submitted batch job 39858186
+4
+Submitted batch job 39858187
+5
+Submitted batch job 39858188
+6
+Submitted batch job 39858189
+7
+Submitted batch job 39858190
+8
+Submitted batch job 39858191
+9
+Submitted batch job 39858194
+10
+Submitted batch job 39858200
+11
+Submitted batch job 39858203
+12
+Submitted batch job 39858209
+13
+Submitted batch job 39858211
+14
+Submitted batch job 39858216
+15
+Submitted batch job 39858223
+16
+Submitted batch job 39858226
+17
+Submitted batch job 39858229
+18
+Submitted batch job 39858242
+19
+Submitted batch job 39858248
+20
+Submitted batch job 39858258
+21
+Submitted batch job 39858261
+22
+Submitted batch job 39858265
+23
+Submitted batch job 39858268
+24
+Submitted batch job 39858270
+25
+Submitted batch job 39858272
+26
+Submitted batch job 39858273
+27
+Submitted batch job 39858274
+28
+Submitted batch job 39858275
+29
+Submitted batch job 39858276
+30
+Submitted batch job 39858277
+31
+Submitted batch job 39858278
+32
+Submitted batch job 39858279
+33
+Submitted batch job 39858280
+34
+Submitted batch job 39858281
+35
+Submitted batch job 39858283
+36
+Submitted batch job 39858284
+37
+Submitted batch job 39858285
+38
+Submitted batch job 39858286
+39
+Submitted batch job 39858287
+40
+Submitted batch job 39858288
+41
+Submitted batch job 39858289
+42
+Submitted batch job 39858290
+43
+Submitted batch job 39858291
+44
+Submitted batch job 39858292
+45
+Submitted batch job 39858293
+46
+Submitted batch job 39858294
+47
+Submitted batch job 39858295
+48
+Submitted batch job 39858296
+49
+Submitted batch job 39858305
+50
+Submitted batch job 39858306
+51
+Submitted batch job 39858309
+52
+Submitted batch job 39858314
+53
+Submitted batch job 39858317
+54
+Submitted batch job 39858319
+55
+Submitted batch job 39858326
+56
+Submitted batch job 39858328
+57
+Submitted batch job 39858331
+58
+Submitted batch job 39858335
+59
+Submitted batch job 39858337
+60
+Submitted batch job 39858342
+61
+Submitted batch job 39858344
+62
+Submitted batch job 39858346
+63
+Submitted batch job 39858349
+64
+Submitted batch job 39858352
+65
+Submitted batch job 39858355
+66
+Submitted batch job 39858364
+67
+Submitted batch job 39858366
+68
+Submitted batch job 39858367
+69
+Submitted batch job 39858368
+70
+Submitted batch job 39858370
+71
+Submitted batch job 39858371
+72
+Submitted batch job 39858372
+73
+Submitted batch job 39858373
+74
+Submitted batch job 39858374
+75
+Submitted batch job 39858375
+76
+Submitted batch job 39858376
+77
+Submitted batch job 39858377
+78
+Submitted batch job 39858378
+79
+Submitted batch job 39858379
+80
+Submitted batch job 39858380
+81
+Submitted batch job 39858381
+82
+Submitted batch job 39858382
+83
+Submitted batch job 39858383
+84
+Submitted batch job 39858385
+85
+Submitted batch job 39858386
+86
+Submitted batch job 39858387
+87
+Submitted batch job 39858388
+88
+Submitted batch job 39858389
+89
+Submitted batch job 39858390
+90
+submit check_svasp.sm
+Submitted batch job 39858393

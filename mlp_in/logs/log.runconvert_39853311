@@ -1,0 +1,51 @@
+Processed 1 configurations
+0
+Processed 1 configurations
+1
+Processed 1 configurations
+2
+Processed 1 configurations
+3
+Processed 1 configurations
+4
+Processed 1 configurations
+5
+Processed 1 configurations
+6
+Processed 1 configurations
+7
+Processed 1 configurations
+8
+Processed 1 configurations
+9
+Processed 1 configurations
+10
+Processed 1 configurations
+11
+Processed 1 configurations
+12
+Processed 1 configurations
+13
+Processed 1 configurations
+14
+Processed 1 configurations
+15
+Processed 1 configurations
+16
+Processed 1 configurations
+17
+Processed 1 configurations
+18
+Processed 1 configurations
+19
+Processed 1 configurations
+20
+Processed 1 configurations
+21
+len(configs_list): 22
+95% part: 21
+5% part: 1
+Configurations saved to validate.cfg
+Configurations appended to train.cfg
+submit run_mlp.sm
+Submitted batch job 39853383

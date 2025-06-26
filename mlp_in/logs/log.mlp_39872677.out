@@ -1,0 +1,347 @@
+Job started at: Tue 24 Jun 2025 02:33:21 PM PDT
+Selection data found
+WARNING: File pot.almtp already exists and will be overwritten during the training procedure!
+Basic trainer initialization complete
+	auto-minmax-magmom = false
+	init_random = false
+	no_mindist_update = false
+	skip_preinit = false
+	iteration_limit = 50000
+	weight_scaling = 2
+	weight_scaling_forces = 1
+	energy_weight = 0.850000
+	force_weight = 0.150000
+	penalty_weight = 0.000001
+	scale_by_force = 0.000000
+	select_factor = 1.000000
+	stress_weight = 0.001000
+	tolerance = 0.001000
+	log = stdout
+	save_to = pot.almtp
+3467 configurations found in the training set
+Minimal interatomic distance in the training set is 0.843509. MTP's mindist will be updated
+Iteration limit is 50000
+Convergence tolerance is 0.001
+Energy weight: 0.85
+Force weight: 0.15
+Stress weight: 0.001
+MTPR training started on 128 core(s)
+BFGS iter 0: f=0.0068861
+BFGS iter 1: f=0.00688598
+BFGS iter 2: f=0.00688587
+BFGS iter 3: f=0.00688573
+BFGS iter 4: f=0.00688545
+BFGS iter 5: f=0.00688537
+BFGS iter 6: f=0.00688516
+BFGS iter 7: f=0.00688446
+BFGS iter 8: f=0.00688403
+BFGS iter 9: f=0.00688326
+BFGS iter 10: f=0.00688293
+BFGS iter 11: f=0.00688241
+BFGS iter 12: f=0.00688208
+BFGS iter 13: f=0.00688179
+BFGS iter 14: f=0.00688142
+BFGS iter 15: f=0.00688114
+BFGS iter 16: f=0.00688098
+BFGS iter 17: f=0.00688081
+BFGS iter 18: f=0.00688067
+BFGS iter 19: f=0.00688043
+BFGS iter 20: f=0.00688017
+BFGS iter 21: f=0.00687997
+BFGS iter 22: f=0.00687984
+BFGS iter 23: f=0.00687969
+BFGS iter 24: f=0.00687941
+BFGS iter 25: f=0.0068586768
+BFGS iter 26: f=0.0068586537
+BFGS iter 27: f=0.00685863
+BFGS iter 28: f=0.0068585931
+BFGS iter 29: f=0.0068585461
+BFGS iter 30: f=0.0068584683
+BFGS iter 31: f=0.006858401
+BFGS iter 32: f=0.0068583525
+BFGS iter 33: f=0.0068581545
+BFGS iter 34: f=0.0068580988
+BFGS iter 35: f=0.0068580301
+BFGS iter 36: f=0.0068579502
+BFGS iter 37: f=0.0068577801
+BFGS iter 38: f=0.0068576604
+BFGS iter 39: f=0.0068575082
+BFGS iter 40: f=0.0068574126
+BFGS iter 41: f=0.0068573028
+BFGS iter 42: f=0.0068572176
+BFGS iter 43: f=0.0068571284
+BFGS iter 44: f=0.006857053
+BFGS iter 45: f=0.0068569188
+BFGS iter 46: f=0.0068567704
+BFGS iter 47: f=0.0068566244
+BFGS iter 48: f=0.0068564975
+BFGS iter 49: f=0.0068563046
+BFGS iter 50: f=0.0068561977
+BFGS iter 51: f=0.006856113
+BFGS iter 52: f=0.0068557877
+BFGS iter 53: f=0.0068556256
+BFGS iter 54: f=0.0068555136
+BFGS iter 55: f=0.006855415
+BFGS iter 56: f=0.0068553004
+BFGS iter 57: f=0.0068552288
+BFGS iter 58: f=0.0068551444
+BFGS iter 59: f=0.0068550791
+BFGS iter 60: f=0.0068549879
+BFGS iter 61: f=0.006854874
+BFGS iter 62: f=0.0068548158
+BFGS iter 63: f=0.0068547519
+BFGS iter 64: f=0.0068546031
+BFGS iter 65: f=0.0068544948
+BFGS iter 66: f=0.0068544215
+BFGS iter 67: f=0.0068543227
+BFGS iter 68: f=0.0068542582
+BFGS iter 69: f=0.0068542122
+BFGS iter 70: f=0.0068493526
+BFGS iter 71: f=0.0068492274
+BFGS iter 72: f=0.0068491478
+BFGS iter 73: f=0.0068490654
+BFGS iter 74: f=0.0068489706
+BFGS iter 75: f=0.0068488697
+BFGS iter 76: f=0.0068487231
+BFGS iter 77: f=0.0068486422
+BFGS iter 78: f=0.006848569
+BFGS iter 79: f=0.0068485237
+BFGS iter 80: f=0.0068484277
+BFGS iter 81: f=0.0068482935
+BFGS iter 82: f=0.0068481899
+BFGS iter 83: f=0.0068481261
+BFGS iter 84: f=0.0068480678
+BFGS iter 85: f=0.0068479962
+BFGS iter 86: f=0.0068479237
+BFGS iter 87: f=0.0068478697
+BFGS iter 88: f=0.0068477878
+BFGS iter 89: f=0.0068477272
+BFGS iter 90: f=0.0068476651
+BFGS iter 91: f=0.0068475926
+BFGS iter 92: f=0.006847541
+BFGS iter 93: f=0.0068474869
+BFGS iter 94: f=0.0068474378
+BFGS iter 95: f=0.0068473846
+BFGS iter 96: f=0.0068473366
+BFGS iter 97: f=0.0068472969
+BFGS iter 98: f=0.0068472601
+BFGS iter 99: f=0.006847219
+BFGS iter 100: f=0.0068430053
+BFGS iter 101: f=0.0068425202
+BFGS iter 102: f=0.0068423535
+BFGS iter 103: f=0.0068421675
+BFGS iter 104: f=0.0068421018
+BFGS iter 105: f=0.0068420606
+BFGS iter 106: f=0.0068420192
+BFGS iter 107: f=0.0068419761
+BFGS iter 108: f=0.0068419375
+BFGS iter 109: f=0.0068418904
+BFGS iter 110: f=0.0068418482
+BFGS iter 111: f=0.0068417673
+BFGS iter 112: f=0.006841651
+BFGS iter 113: f=0.0068415943
+BFGS iter 114: f=0.0068415261
+BFGS iter 115: f=0.0068413977
+BFGS iter 116: f=0.0068412971
+BFGS iter 117: f=0.0068412466
+BFGS iter 118: f=0.0068412033
+BFGS iter 119: f=0.0068411603
+BFGS iter 120: f=0.0068411103
+BFGS iter 121: f=0.0068410559
+BFGS iter 122: f=0.0068409999
+BFGS iter 123: f=0.0068409453
+BFGS iter 124: f=0.0068408957
+BFGS iter 125: f=0.0068408555
+BFGS iter 126: f=0.0068408242
+BFGS iter 127: f=0.0068407949
+BFGS iter 128: f=0.0068407605
+BFGS iter 129: f=0.0068407193
+BFGS iter 130: f=0.0068406762
+BFGS iter 131: f=0.0068406359
+BFGS iter 132: f=0.0068405958
+BFGS iter 133: f=0.0068405492
+BFGS iter 134: f=0.0068404911
+BFGS iter 135: f=0.0068404228
+BFGS iter 136: f=0.0068403529
+BFGS iter 137: f=0.0068402901
+BFGS iter 138: f=0.006840236
+BFGS iter 139: f=0.0068401855
+BFGS iter 140: f=0.0068401302
+BFGS iter 141: f=0.0068400648
+BFGS iter 142: f=0.0068399933
+BFGS iter 143: f=0.0068399278
+BFGS iter 144: f=0.0068398732
+BFGS iter 145: f=0.0068398215
+BFGS iter 146: f=0.0068397605
+BFGS iter 147: f=0.0068396685
+BFGS iter 148: f=0.0068395787
+BFGS iter 149: f=0.0068394935
+BFGS iter 150: f=0.0068360853
+BFGS iter 151: f=0.0068353969
+BFGS iter 152: f=0.0068350654
+BFGS iter 153: f=0.0068347869
+BFGS iter 154: f=0.0068346408
+BFGS iter 155: f=0.006834481
+BFGS iter 156: f=0.0068342785
+BFGS iter 157: f=0.0068341645
+BFGS iter 158: f=0.0068340667
+BFGS iter 159: f=0.0068339306
+BFGS iter 160: f=0.0068338135
+BFGS iter 161: f=0.0068336843
+BFGS iter 162: f=0.0068335881
+BFGS iter 163: f=0.0068335367
+BFGS iter 164: f=0.0068334423
+BFGS iter 165: f=0.0068333544
+BFGS iter 166: f=0.0068332353
+BFGS iter 167: f=0.0068331515
+BFGS iter 168: f=0.0068330134
+BFGS iter 169: f=0.0068329105
+BFGS iter 170: f=0.0068327887
+BFGS iter 171: f=0.0068326489
+BFGS iter 172: f=0.0068325118
+BFGS iter 173: f=0.0068323777
+BFGS iter 174: f=0.0068322641
+BFGS iter 175: f=0.0068321709
+BFGS iter 176: f=0.0068320938
+BFGS iter 177: f=0.0068320199
+BFGS iter 178: f=0.0068319379
+BFGS iter 179: f=0.0068318505
+BFGS iter 180: f=0.0068317633
+BFGS iter 181: f=0.0068316883
+BFGS iter 182: f=0.0068316218
+BFGS iter 183: f=0.0068315485
+BFGS iter 184: f=0.0068314615
+BFGS iter 185: f=0.0068313781
+BFGS iter 186: f=0.0068313129
+BFGS iter 187: f=0.0068312529
+BFGS iter 188: f=0.0068311768
+BFGS iter 189: f=0.006831074
+BFGS iter 190: f=0.0068309595
+BFGS iter 191: f=0.0068308513
+BFGS iter 192: f=0.0068307503
+BFGS iter 193: f=0.0068306407
+BFGS iter 194: f=0.0068305157
+BFGS iter 195: f=0.0068303934
+BFGS iter 196: f=0.0068302877
+BFGS iter 197: f=0.0068301923
+BFGS iter 198: f=0.0068300952
+BFGS iter 199: f=0.0068299928
+BFGS iter 200: f=0.0068298794
+BFGS iter 201: f=0.0068297607
+BFGS iter 202: f=0.0068296436
+BFGS iter 203: f=0.006829537
+BFGS iter 204: f=0.0068294457
+BFGS iter 205: f=0.0068293597
+BFGS iter 206: f=0.0068292868
+BFGS iter 207: f=0.0068291923
+BFGS iter 208: f=0.0068291029
+BFGS iter 209: f=0.006829021
+BFGS iter 210: f=0.0068289497
+BFGS iter 211: f=0.0068288825
+BFGS iter 212: f=0.0068288206
+BFGS iter 213: f=0.0068287613
+BFGS iter 214: f=0.0068287069
+BFGS iter 215: f=0.0068286554
+BFGS iter 216: f=0.0068286035
+BFGS iter 217: f=0.0068285393
+BFGS iter 218: f=0.0068284691
+BFGS iter 219: f=0.0068284058
+BFGS iter 220: f=0.0068283605
+BFGS iter 221: f=0.0068283245
+BFGS iter 222: f=0.006828284
+BFGS iter 223: f=0.0068282331
+BFGS iter 224: f=0.0068281829
+BFGS iter 225: f=0.0068281463
+BFGS iter 226: f=0.0068281039
+BFGS iter 227: f=0.0068280612
+BFGS iter 228: f=0.0068280078
+BFGS iter 229: f=0.0068279398
+BFGS iter 230: f=0.0068278542
+BFGS iter 231: f=0.006827762
+BFGS iter 232: f=0.00682768
+BFGS iter 233: f=0.006827613
+BFGS iter 234: f=0.0068275477
+BFGS iter 235: f=0.0068274726
+BFGS iter 236: f=0.0068273841
+BFGS iter 237: f=0.0068272932
+BFGS iter 238: f=0.0068272158
+BFGS iter 239: f=0.0068271538
+BFGS iter 240: f=0.0068270963
+BFGS iter 241: f=0.0068270309
+BFGS iter 242: f=0.0068269548
+BFGS iter 243: f=0.0068268773
+BFGS iter 244: f=0.00682681
+BFGS iter 245: f=0.0068267583
+BFGS iter 246: f=0.0068267137
+BFGS iter 247: f=0.006826676
+BFGS iter 248: f=0.0068266356
+BFGS iter 249: f=0.006826591
+BFGS ended due to small decr. in 50 iterations
+MTPR training ended
+Rescaling...
+   scaling = 0.060736298, condition number = 31.571928
+   scaling = 0.066257779, condition number = 31.003902
+   scaling = 0.072883557, condition number = 31.480782
+   scaling = 0.080171913, condition number = 32.495438
+   scaling = 0.087460269, condition number = 34.555528
+Rescaling to 0.066257779... done
+Rescaling...
+   scaling = 0.055214816, condition number = 31.151922
+   scaling = 0.060234345, condition number = 31.659264
+   scaling = 0.066257779, condition number = 31.0039
+   scaling = 0.072883557, condition number = 31.480785
+   scaling = 0.079509335, condition number = 32.239768
+Rescaling to 0.066257779... done
+_________________Errors report_________________
+Energy:
+	Errors checked for 3467 configurations
+	Maximal absolute difference = 1.67447
+	Average absolute difference = 0.176593
+	RMS     absolute difference = 0.287333
+
+Energy per atom:
+	Errors checked for 3467 configurations
+	Maximal absolute difference = 0.0261636
+	Average absolute difference = 0.00275124
+	RMS     absolute difference = 0.00447197
+
+Forces:
+	Errors checked for 222174 atoms
+	Maximal absolute difference = 3.37637
+	Average absolute difference = 0.145831
+	RMS     absolute difference = 0.211977
+	Max(ForceDiff) / Max(Force) = 0.00130151
+	RMS(ForceDiff) / RMS(Force) = 0.017669
+
+Stresses (in energy units):
+	Errors checked for 3467 configurations
+	Maximal absolute difference = 21.7956
+	Average absolute difference = 3.55056
+	RMS     absolute difference = 4.40143
+	Max(StresDiff) / Max(Stres) = 0.00989404
+	RMS(StresDiff) / RMS(Stres) = 0.0422301
+
+Virial stresses (in pressure units):
+	Errors checked for 3467 configurations
+	Maximal absolute difference = 3.77922
+	Average absolute difference = 0.566293
+	RMS     absolute difference = 0.684888
+	Max(StresDiff) / Max(Stres) = 0.00989404
+	RMS(StresDiff) / RMS(Stres) = 0.0383169
+_______________________________________________
+
+	batch_size = 9999
+	swap_limit = 0
+	weight_scaling = 2
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	init_value = 0.000001
+	site_en_weight = 0.000000
+	stress_weight = 0.000000
+	threshold = 1.001000
+Selection: state saved to "pot.almtp"
+training complete
+potnumber 5
+Submitted batch job 39884143
+Job finished at: Tue 24 Jun 2025 03:29:56 PM PDT
+Job running time: 0h 56m 35s

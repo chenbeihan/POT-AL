@@ -1,0 +1,30 @@
+MTP loaded from pot.almtp
+	batch_size = 9999
+	swap_limit = 0
+	weight_scaling = 2
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	init_value = 0.000001
+	site_en_weight = 0.000000
+	stress_weight = 0.000000
+	threshold = 1.001000
+Selection: loading state from "pot.almtp"
+Selection: loaded the following weights:
+	energy_weight = 1.000000
+	force_weight = 0.000000
+	stress_weight = 0.000000
+	site_en_weight = 0.000000
+
+Selection: loading state complete.
+Training set loaded from train.cfg
+429 configurations selected from training set
+Loading and selection of candidates completed
+Training set was increased by 2 configurations
+relative numeration of species detected
+Processed 2 configurations
+Submitted batch job 39838838
+0
+Submitted batch job 39838839
+1
+submit check_svasp.sm
+Submitted batch job 39838861

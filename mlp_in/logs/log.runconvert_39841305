@@ -1,0 +1,9 @@
+Processed 1 configurations
+0
+Processed 1 configurations
+1
+len(configs_list): 2
+Configurations saved to validate.cfg
+Configurations appended to train.cfg
+submit run_mlp.sm
+Submitted batch job 39841484

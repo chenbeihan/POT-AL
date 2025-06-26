@@ -1,0 +1,52 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -c 1
+#SBATCH -C cpu
+#SBATCH -A m4796
+#SBATCH -q shared
+#SBATCH -t 30:00
+#SBATCH -o log.runconvert_%j
+
+# Record the start time
+start_time=$(date +%s)
+echo "Job started at: $(date)"
+
+
+n_poscar=$(grep "BEGIN" selected.cfg  | wc -l) 
+n_poscar_prev=$((${n_poscar}-1))
+for i in $(seq 0 $n_poscar_prev);
+do
+	#mkdir -p vasp/$i
+	cd vasp/$i
+	/global/homes/b/bqc5559/programs/mlip3/mlip-3/bin/mlp convert OUTCAR output.cfg --input_format=outcar
+	cat output.cfg >> ../../converted.cfg
+	cd ../..
+	echo "$i"
+done
+
+
+module load python
+python 	split_converted.py
+
+mkdir -p converted/
+number=$(find "converted/" -maxdepth 1 -type f | wc -l)
+mv converted.cfg converted/converted_${number}.cfg
+
+mkdir -p validate/
+number=$(find "validate/" -maxdepth 1 -type f | wc -l)
+mv validate.cfg validate/validate_${number}.cfg
+
+export SHLVL=1
+
+echo "submit run_mlp.sm"
+sbatch run_mlp.sm
+
+
+
+# Record the end time
+end_time=$(date +%s)
+# Calculate and output the job duration
+duration=$((end_time - start_time))
+echo "Job finished at: $(date)"
+echo "Job running time: $(($duration / 3600))h $(($duration % 3600 / 60))m $(($duration % 60))s"

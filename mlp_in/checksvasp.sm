@@ -1,0 +1,54 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -c 1
+#SBATCH -C cpu
+#SBATCH -A m4796
+#SBATCH -q shared
+#SBATCH -t 48:00:00
+#SBATCH -o log.checksvasp
+
+sleep 60
+
+check_jobs() {
+  jobs=$(squeue -u bqc5559 --format="%.18i %.9P %.8j %.8u %.2t %.10M %.9l %.6D %R" | grep "svasp")
+
+  if [ -z "$jobs" ]; then
+    echo "No running jobs named 'svasp'."
+    return 0
+  else
+    echo "Checking jobs named 'svasp':"
+    #echo "$jobs"
+
+    # Extract job states
+    states=$(echo "$jobs" | awk '{print $5}')
+
+    # Check if any jobs are still running or pending
+    running_or_pending=$(echo "$states" | grep -E 'R|PD')
+
+    if [ -z "$running_or_pending" ]; then
+      echo "All 'svasp' jobs are finished."
+      return 0
+    else
+      echo "Some 'svasp' jobs are still running or pending."
+      return 1
+    fi
+  fi
+}
+
+# Main loop to check jobs every 30 seconds
+while true; do
+  if check_jobs; then
+    sbatch run_convert.sm
+    echo "Submitted run_convert.sm"
+    exit 0
+  fi
+  sleep 30
+done
+
+# At the end of the script, resubmit this script if jobs are still running or pending
+if ! check_jobs; then
+  sleep 100
+  echo "Resubmitting this job to continue checking 'svasp' jobs."
+  sbatch $0  # Resubmit this script itself
+fi

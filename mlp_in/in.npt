@@ -1,0 +1,49 @@
+# LAMMPS input script for 20 ps NPT simulation
+
+units           metal
+dimension       3
+boundary        p p p
+atom_style      atomic
+
+# Read data file
+read_data       initial.lmp
+
+mass 1 238.029
+mass 2 14.0067
+
+# Define interatomic potential
+pair_style      mlip load_from=pot.almtp extrapolation_control=true extrapolation_control:threshold_save=1.2 extrapolation_control:threshold_break=2.0 extrapolation_control:save_extrapolative_to=preselected.cfg
+pair_coeff      * * 
+
+# Define simulation settings
+neighbor        2.0 bin
+neigh_modify    delay 10
+
+thermo          1
+
+# Fix box/relax for pressure relaxation (optional)
+fix             1 all box/relax iso 0.0 vmax 0.001
+
+# Minimize energy
+min_style       cg
+minimize        1.0e-12 1.0e-12 5000 50000
+unfix           1
+
+# Define initial velocities
+velocity        all create 2500.0 84965756 rot yes dist gaussian
+
+# Define thermodynamic output
+thermo          1000
+thermo_style    custom step temp press pe ke etotal
+
+# Equilibration
+fix             1 all npt temp 2500.0 3000.0 0.1 iso 0.0 0.0 1.0
+
+# Time step
+timestep        0.001   # 1 fs
+
+run             1000000
+#dump           1 all custom 1000 dump.trj id type x y z
+
+# Write final configuration
+write_data      final_configuration.dat
