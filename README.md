@@ -1,4 +1,4 @@
-Potential learning actively
+Potential active learning
 
 Prerequisite: MLIP-3, LAMMPS-MLIP-3 interface, VASP needed, NERSC environment.
 
