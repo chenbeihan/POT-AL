@@ -1,3 +1,5 @@
+ML training interatomic potential for Uranium Nitride defect behaviors prediction
+
 Install MLIP-3, LAMMPS-MLIP-3 interface, VASP needed
 
 Begin with a initial.lmp sctructure, a pot.almtp potential, and a training set.
