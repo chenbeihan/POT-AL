@@ -1,0 +1,39 @@
+#!/bin/bash
+#SBATCH -A m4796
+#SBATCH -q premium
+#SBATCH --ntasks=256
+#SBATCH --cpus-per-task=1
+#SBATCH -N 1
+#SBATCH -t 4:00:00
+#SBATCH -C cpu
+#SBATCH -J mlp
+#SBATCH -o log.%x_%j.out
+#SBATCH -e log.%x_%j.err
+
+# Record the start time
+start_time=$(date +%s)
+echo "Job started at: $(date)"
+
+
+srun -n 256 -c 1 --cpu_bind=cores /global/homes/b/bqc5559/programs/mlip3/mlip-3/bin/mlp train pot.almtp train.cfg --save_to=pot.almtp --iteration_limit=50000 --weight_scaling=2 --weight_scaling_forces=1 --energy_weight=0.85 --force_weight=0.15
+
+mkdir -p pots
+pot_number=$(find "pots/" -maxdepth 1 -type f | wc -l)
+
+echo "potnumber ${pot_number}"
+
+cp pot.almtp pots/pot_${pot_number}.almtp
+
+mkdir -p logs
+mv log.* logs
+
+export SHLVL=1
+sbatch run_lmp.sm
+
+
+# Record the end time
+end_time=$(date +%s)
+# Calculate and output the job duration
+duration=$((end_time - start_time))
+echo "Job finished at: $(date)"
+echo "Job running time: $(($duration / 3600))h $(($duration % 3600 / 60))m $(($duration % 60))s"
