@@ -1,4 +1,4 @@
-ML training interatomic potential for Uranium Nitride defect behaviors prediction
+Potential learning actively
 
 Prerequisite: MLIP-3, LAMMPS-MLIP-3 interface, VASP needed, NERSC environment.
 
